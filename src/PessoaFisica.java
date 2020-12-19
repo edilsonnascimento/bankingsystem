@@ -1,4 +1,4 @@
-public class PessoaFisica extends ClienteBanco{
+public final class PessoaFisica extends ClienteBanco{
 
     private int cpf;
 
@@ -11,12 +11,24 @@ public class PessoaFisica extends ClienteBanco{
     }
 
     @Override
-    public void verifiaDocumento() {
+    public void verificaDocumento() {
+        if( (this.getCpf() >= 10) && (this.getCpf() <= 20)) {
+            System.out.println("CPF VÁLIDO!");
+        }else{
+            System.out.println("CPF INVALIDO!");
+        }
+    }
 
+    private boolean isPar(int numeroConta){
+        return (numeroConta % 2) == 0;
     }
 
     @Override
-    public void validar() {
-
+    public void validar(){
+        if(isPar(super.getNumeroConta())){
+            System.out.println("Essa conta é PAR");
+        }else{
+            System.out.println("Essa conta é IMPAR");
+        }
     }
 }

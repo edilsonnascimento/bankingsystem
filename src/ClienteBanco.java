@@ -8,8 +8,12 @@ public abstract class ClienteBanco implements Verifica{
         return numeroConta;
     }
 
-    public void setNumeroConta(int numeroConta) {
-        this.numeroConta = numeroConta;
+    public void setNumeroConta(int numeroConta) throws NumeroException {
+        if(numeroConta >= 0){
+            this.numeroConta = numeroConta;
+        }else {
+            throw new NumeroException();
+        }
     }
 
     public String getNome() {
@@ -28,5 +32,5 @@ public abstract class ClienteBanco implements Verifica{
         this.endereco = endereco;
     }
 
-    public abstract void verifiaDocumento();
+    public abstract void verificaDocumento();
 }

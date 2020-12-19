@@ -1,4 +1,4 @@
-public class Endereco {
+public final class Endereco {
 
     private int numero;
     private String rua;

@@ -1,4 +1,4 @@
 public interface Verifica {
 
-    public void validar();
+    public void validar() throws NumeroException;
 }
