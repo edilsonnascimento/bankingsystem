@@ -1,7 +1,10 @@
+/**
+ * @autor: Edilson do Nascimento
+ */
 public final class PessoaJuridica extends ClienteBanco{
 
-    private int cnpj;
-    private PessoaFisica responsavel;
+    private int cnpj = 0;
+    private PessoaFisica responsavel = new PessoaFisica();
 
     public int getCnpj() {
         return cnpj;

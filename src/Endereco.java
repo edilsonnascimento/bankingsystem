@@ -1,7 +1,10 @@
+/**
+ * @autor: Edilson do Nascimento
+ */
 public final class Endereco {
 
-    private int numero;
-    private String rua;
+    private int numero = 0;
+    private String rua = "";
 
     public int getNumero() {
         return numero;

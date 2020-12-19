@@ -1,3 +1,6 @@
+/**
+ * @autor: Edilson do Nascimento
+ */
 public class NumeroException extends Exception{
 
     public void imprimeMensagem(){

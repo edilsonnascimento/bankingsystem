@@ -1,6 +1,9 @@
+/**
+ * @autor: Edilson do Nascimento
+ */
 public final class PessoaFisica extends ClienteBanco{
 
-    private int cpf;
+    private int cpf = 0;
 
     public int getCpf() {
         return cpf;

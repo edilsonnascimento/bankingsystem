@@ -1,8 +1,11 @@
+/**
+ * @autor: Edilson do Nascimento
+ */
 public abstract class ClienteBanco implements Verifica{
 
-    private int numeroConta;
-    private String nome;
-    private Endereco endereco;
+    private int numeroConta = 0;
+    private String nome  = "";
+    private Endereco endereco = new Endereco();
 
     public int getNumeroConta() {
         return numeroConta;
